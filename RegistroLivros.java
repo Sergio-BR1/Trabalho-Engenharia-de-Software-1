@@ -44,6 +44,15 @@ public class RegistroLivros {
 		}
 		return instancia;
 	}
+
+	public Livro buscarLivrosDisponiveisPorNome(String nome) {
+		for (Livro livro : livrosDisponiveis) {
+			if (livro.getNome().equals(nome)) {
+				return livro;
+			}
+		}
+		return null;
+	}
 	
 
 }
