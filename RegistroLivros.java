@@ -45,13 +45,21 @@ public class RegistroLivros {
 		return instancia;
 	}
 
-	public Livro buscarLivrosDisponiveisPorNome(String nome) {
+	public Livro buscarLivrosDisponiveisPorCodigo(String codigoLivro) {
 		for (Livro livro : livrosDisponiveis) {
-			if (livro.getNome().equals(nome)) {
+			if (livro.getNome().equals(codigoLivro)) {
 				return livro;
 			}
 		}
 		return null;
+	}
+
+	public void removerLivroDisponivel(Livro livro) {
+		livrosDisponiveis.remove(livro);
+	}
+
+	public void removerLivroAlugado(Livro livro) {
+		livrosAlugados.remove(livro);
 	}
 	
 

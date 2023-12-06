@@ -20,9 +20,9 @@ public class alunoGraduacao implements IUsuario {
 		return codigo;
 	}
 
-	public void emprestimo (String nomeLivro) {
+	public void emprestimo (String codigoLivro) {
 		solicitarEmprestimo = emprestimoAlunoGraduacao;
-		solicitarEmprestimo.emprestar(nomeLivro);
+		solicitarEmprestimo.emprestar(codigoLivro);
 	}
 
 }
